@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AlgoritmSimetric.cs" />
     <Compile Include="CifrulCezar.cs" />
+    <Compile Include="GenericCeaser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

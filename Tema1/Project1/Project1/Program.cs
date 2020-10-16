@@ -9,16 +9,33 @@ namespace Project1
     
     class Program
     {
-        public static string ALPHABET = "AĂÂBCDEFGHIÎJKLMNOPQRSȘTȚUVWXYZ";
-        static void Main(string[] args)
+
+        public static string ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        static void TestCezar()
         {
-            
             CifrulCezar cf = new CifrulCezar(ALPHABET);
             string text = "ABC";
             string criptat = cf.Criptare(text);
             Console.WriteLine(criptat);
             string decriptat = cf.Decriptare(criptat);
             Console.WriteLine(decriptat);
+        }
+        static void TestCezarGeneric()
+        {
+            GenericCeaser cf = new GenericCeaser(ALPHABET,1);
+            string text = "ABC";
+            string criptat = cf.Criptare(text);
+            Console.WriteLine(criptat);
+            string decriptat = cf.Decriptare(criptat);
+            Console.WriteLine(decriptat);
+        }
+        static void Main(string[] args)
+        {
+            TestCezar();
+            Console.WriteLine();
+            TestCezarGeneric();
+           
+            
 
 
 
